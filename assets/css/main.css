@@ -6468,6 +6468,9 @@ input.main-search-input::placeholder {
   background-color: var(--bg);
 }
 .service-3 .service-item .icon img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
   transition: all 0.4s ease-in-out;
   display: inline-block;
 }
