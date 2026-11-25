@@ -13,10 +13,13 @@
     });
 
     //>> Sidebar Toggle Js Start <<//
-    $(".offcanvas__close,.offcanvas__overlay").on("click", function () {
+    $(".offcanvas__close,.offcanvas__overlay").on("click", closeSidebar);
+    $(".mobile-menu").on("click", "a[href]:not(.mean-expand):not(.meanmenu-reveal)", closeSidebar);
+
+    function closeSidebar() {
       $(".offcanvas__info").removeClass("info-open");
       $(".offcanvas__overlay").removeClass("overlay-open");
-    });
+    }
     $(".sidebar__toggle").on("click", function () {
       $(".offcanvas__info").addClass("info-open");
       $(".offcanvas__overlay").addClass("overlay-open");
