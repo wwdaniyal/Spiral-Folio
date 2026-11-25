@@ -439,6 +439,16 @@ span {
   margin-bottom: 10px;
 }
 
+.about-wrapper-2 .about-photo-card {
+  padding: 8px;
+}
+.about-wrapper-2 .about-photo-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
+
 .about-wrapper-3 .about-images {
   position: relative;
 }
